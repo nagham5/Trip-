@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "icon" href = 
+"logo.png" 
+        type = "image/x-icon">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="main2" href="main2.css">
+<title>find your trip</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                                               
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                                               
+<style>
+    .body {
+  background-image: url('backgroud.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+    .navbar{ position: relative;
+        background-color: #0497a1;
+        width: 100%;
+        
+        
+    }
+    .navbar ul{
+        overflow: auto;
+    }
+    .navbar li{
+        float:left;
+        list-style: none; 
+        margin: 13px 20px;
+        
+    }
+    .navbar li a{
+        padding: 3px 3px;
+        text-decoration: none;
+        color: white;
+    }
+    .navbar li a:hover{
+        color: #f9bc5b
+    }
+
+    .facebook{
+            float: right;
+            color: white;
+        }
+        
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 70%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+.container { 
+ padding-top: 50px;
+ padding-left: 50px;
+  height: 100px;
+  width: 500px;
+  position: relative;
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+    
+    
+</style>
+</head>
+<body class = "body" >
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="main1.html">Start</a></li>
+
+                <li><a href="m.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="new.html">Services</a></li>
+                <div class="facebook">
+                    <li><a href="https://www.facebook.com/"> </a><i class='fa fa-facebook-official' style='color: rgb(255, 255, 255)' ></i> </li>
+                </div>
+                 </ul>
+        </nav>
+    </header>
+<div class="container">
+    <h2 style="color: #f9bc5b; font-size: 100px; font-weight: bold;">The City</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for city.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="servies.html">jerusalem</a></li>
+  <li><a href="servies_bethlehem.html">bethlehem</a></li>
+
+  <li><a href="hebron.html">jericho</a></li>
+  <li><a href="hebron.html">Hebron</a></li>
+
+  <li><a href="hebron.html">akka</a></li>
+</ul>
+</div>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+
+    
+  
+
+    
+
+</body>
+</html> 

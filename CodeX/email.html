@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="main2" href="main2.css">
+<title>Sign Up</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                                               
+<style>
+    .body1 {
+  background-image: url('aboutus.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+    .navbar{
+        position: relative;
+        background-color: #0497a1;
+        width: 100%;
+        
+    }
+    
+
+    .navbar ul{
+        overflow: auto;
+    }
+    .navbar li{
+        float:left;
+        list-style: none; 
+        margin: 13px 20px;
+        
+    }
+    .navbar li a{
+        padding: 3px 3px;
+        text-decoration: none;
+        color: white;
+    }
+    .navbar li a:hover{
+        color: #f9bc5b
+    }
+
+    .facebook{
+            float: right;
+            color: white;
+        }
+        .button {
+  background-color: #0497a1; 
+  border: none;
+  border-radius:30px;
+  height: 100px;
+  width: 500px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+}
+.button:hover {
+  background-color: #f9bc5b; 
+  color: white;
+}
+
+  .button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.container { 
+ padding-top: 800px;
+ padding-left: 1000px;
+  height: 60px;
+  width: 300px;
+  position: relative;
+  
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.head{
+    margin: 0 0 18px 0;
+  font: bold;
+  font-family: "Bebas Neue", cursive;
+  font-size: 25rem;
+  
+  color: var(--title-color);
+  transition: color 0.3s ease-out;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color:#6abadeba;
+    font-family: 'Arial';
+}
+.login{
+        width: 460px;
+        overflow: hidden;
+        margin: auto;
+        margin: 20 0 0 450px;
+        padding: 80px;
+        align-items: center;
+
+        background: #f9bc5b;
+        border-radius: 15px ;
+       
+
+}
+h2{
+    text-align: center;
+    color: #6abadeba;
+    padding: 20px;
+}
+label{
+    color: #6abadeba;
+    font-size: 17px;
+}
+#Uname{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#Pass{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+
+}
+#log{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: black;
+
+
+}
+span{
+    color: white;
+    font-size: 17px;
+}
+a1{
+    float: right;
+    background-color: #6abadeba;
+}
+.button {
+    float: right;
+    height: 70px;
+    width: 150px;
+    background-color: #0497a1; /* Green */
+  border: none;
+  border-radius:30px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  
+}
+
+  .button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+    
+    
+</style>
+</head>
+<body class = "body1" >
+    <header>
+        <nav class="navbar">
+            <ul>
+              <li><a href="main1.html">Start</a></li>
+                <li><a href="m.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="new.html">Services</a></li>
+                
+
+                <div class="facebook">
+                    <li><a href="https://www.facebook.com/"> </a><i class='fa fa-facebook-official' style='color: rgb(255, 255, 255)' ></i> </li>
+                </div>
+                 </ul>
+        </nav>
+    </header>
+    <h2 style="color:#0497a1; font-size: 100px; font-weight: bold;">Login Page</h2><br>
+    <div class="login">
+    <form id="login" method="get" action="login.php">
+        <label><b>User Name
+        </b>
+        </label>
+        <input type="text" name="Uname" id="Uname" placeholder="Username">
+        <br><br>
+        <label><b>Password
+        </b>
+        </label>
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">
+        <br><br>
+        <button class="button button1" onclick = "window.location.href='m.html'">Log In Here  </button>
+
+        <br><br>
+        <input type="checkbox" id="check">
+        <span>Remember me</span>
+        <br><br>
+        
+    </form>
+</div>
+
+    
+
+</body>
+</html> 

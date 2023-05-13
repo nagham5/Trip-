@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "icon" href = 
+"logo.png" 
+        type = "image/x-icon">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="main2" href="main2.css">
+<title>find your trip</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                                               
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                                               
+<style>
+    .body {
+  background-image: url('backgroud.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+    .navbar{ position: relative;
+        background-color: #0497a1;
+        width: 100%;
+        
+        
+    }
+    .navbar ul{
+        overflow: auto;
+    }
+    .navbar li{
+        float:left;
+        list-style: none; 
+        margin: 13px 20px;
+        
+    }
+    .navbar li a{
+        padding: 3px 3px;
+        text-decoration: none;
+        color: white;
+    }
+    .navbar li a:hover{
+        color: #f9bc5b
+    }
+
+    .facebook{
+            float: right;
+            color: white;
+        }
+        
+
+
+.container1{ 
+ padding-top: 50px;
+ padding-left: 50px;
+  height: 100px;
+  width: 500px;
+  position: relative;
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+button {
+  padding: 0.75em;
+  border: none;
+  outline: none;
+  background-color: rgb(68, 18, 232);
+  color: white;
+  border-radius: 0.25em;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(41, 4, 164);
+}
+input {
+  margin: 0.25em 0em 1em 0em;
+  outline: none;
+  padding: 0.5em;
+  border: none;
+  background-color: rgb(225, 225, 225);
+  border-radius: 0.25em;
+  color: black;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+}
+
+h1, p {
+  text-align: center;
+}
+
+input {
+  margin: 0.25em 0em 1em 0em;
+}
+
+h1, p{
+    text-align: center;
+}
+    
+    
+</style>
+</head>
+<body class = "body" >
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="main1.html">Start</a></li>
+
+                <li><a href="m.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="new.html">Services</a></li>
+                <div class="facebook">
+                    <li><a href="https://www.facebook.com/"> </a><i class='fa fa-facebook-official' style='color: rgb(255, 255, 255)' ></i> </li>
+                </div>
+                 </ul>
+        </nav>
+    </header>
+    <form>
+        <div class="container">
+          <h1 style="color: #0497a1; font-weight: bold; font-size: 50px;">Register</h1>
+          <p>Fill Out Your information</p>
+          <label  for="name" ><b >Name</b></label>
+          <input
+            type="text"
+            placeholder="Enter username"
+            name="name"
+            id="name"
+            required
+          />
+
+          <label  for="City" ><b >City</b></label>
+          <input
+            type="text"
+            placeholder="Enter Your City"
+            name="City"
+            id="City"
+            required
+          />
+  
+          <label for="email"><b>Email</b></label>
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            id="email"
+            required
+          />
+          <label for="number"><b>Phone</b></label>
+          <input
+            type="text"
+            placeholder="Enter Phone Number"
+            name="number"
+            id="number"
+            required
+          />
+  
+          <label for="pwd"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="pwd"
+            id="pwd"
+            required
+          />
+  
+          <label for="pwd-repeat"><b>Repeat Password</b></label>
+          <input
+            type="password"
+            placeholder="Repeat Password"
+            name="pwd-repeat"
+            id="pwd-repeat"
+            required
+          />
+  
+          <button type="submit" style="background-color: #0497a1;">Join Trip</button>
+        </div>
+  
+        
+      </form>
+</form>
+
+  
+
+    
+
+</body>
+</html> 

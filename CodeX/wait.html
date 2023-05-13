@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "icon" href = 
+"logo.png" 
+        type = "image/x-icon">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="main2" href="main2.css">
+<title>WAITING</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                                               
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                                               
+<style>
+    .body {
+  background-image: url('backgroud.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+    .navbar{ position: relative;
+        background-color: #0497a1;
+        width: 100%;
+        
+        
+    }
+    .navbar ul{
+        overflow: auto;
+    }
+    .navbar li{
+        float:left;
+        list-style: none; 
+        margin: 13px 20px;
+        
+    }
+    .navbar li a{
+        padding: 3px 3px;
+        text-decoration: none;
+        color: white;
+    }
+    .navbar li a:hover{
+        color: #f9bc5b
+    }
+
+    .facebook{
+            float: right;
+            color: white;
+        }
+        
+
+
+.container { 
+ padding-top: 50px;
+ padding-left: 50px;
+  height: 100px;
+  width: 500px;
+  position: relative;
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+body, html {
+  height: 100%
+}
+
+.bgimg {
+  background-image: url('/w3images/forestbridge.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+    
+    
+</style>
+</head>
+<body class = "body" >
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="main1.html">Start</a></li>
+
+                <li><a href="m.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="new.html">Services</a></li>
+                <div class="facebook">
+                    <li><a href="https://www.facebook.com/"> </a><i class='fa fa-facebook-official' style='color: rgb(255, 255, 255)' ></i> </li>
+                </div>
+                 </ul>
+        </nav>
+    </header>
+    <div class="middle">
+        <h1 style="color: #0497a1; font-size:70px; font-weight: bold;">COMING SOON</h1>
+        <hr>
+        <p id="demo" style="font-size:30px; color: #f9bc5b"></p>
+      </div>
+
+      <script>
+        var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+        
+        var countdownfunction = setInterval(function() {
+        
+          var now = new Date().getTime();
+          
+          var distance = countDownDate - now;
+          
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+          
+          if (distance < 0) {
+            clearInterval(countdownfunction);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+
+  
+
+    
+
+</body>
+</html> 
